@@ -1,0 +1,44 @@
+@use "colors";
+footer {
+  color: #ddd;
+  background: colors.$kc;
+  padding: 2rem 0;
+
+  .logo-foot {
+    width: 170px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: #ddd;
+    &:hover {
+      color: #fff;
+    }
+  }
+  ul {
+    li {
+      text-indent: 0.1rem;
+      &::before {
+        margin-right: 0.5rem;
+        content: "-";
+      }
+    }
+    @media screen and (max-width: 576px) {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #ccc;
+  background-color: darken(colors.$kc, 5%);
+}

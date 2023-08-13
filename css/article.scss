@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@use "colors";
+
+#article,
+#tinymce {
+  * {
+    font-weight: normal;
+  }
+  h2 {
+    font-size: 1.5rem;
+    background: colors.$kc;
+    color: #fff;
+    padding: 0.3rem 1rem;
+  }
+  p {
+    margin: 1.5rem 0;
+    line-height: 200%;
+  }
+  img {
+    max-width: 100% !important;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  strong span {
+    font-weight: bold !important;
+  }
+
+  .img-2col {
+    width: calc(50%) !important;
+  }
+
+  .img-3col {
+    width: calc(33.33%) !important;
+  }
+
+  .img-4col {
+    width: calc(25%) !important;
+  }
+
+  .box01 {
+    background: #fafafa;
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+
+  .box-black {
+    background: colors.$black;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .box-kc {
+    background: colors.$kc;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .box-sc {
+    background: colors.$sc;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .box-red {
+    background: colors.$red;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .box-blue {
+    background: colors.$blue;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .box-green {
+    background: colors.$green;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .box-orange {
+    background: colors.$orange;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .font-color-kc {
+    color: colors.$kc;
+  }
+
+  .font-color-sc {
+    color: colors.$sc;
+  }
+
+  .font-color-red {
+    color: colors.$red;
+  }
+
+  .font-color-blue {
+    color: colors.$blue;
+  }
+
+  .font-color-green {
+    color: colors.$green;
+  }
+
+  .font-color-orange {
+    color: colors.$orange;
+  }
+
+  .marker-kc {
+    display: inline;
+    background: colors.$kc;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .marker-sc {
+    display: inline;
+    background: colors.$sc;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .marker-red {
+    display: inline;
+    background: colors.$red;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .marker-blue {
+    display: inline;
+    background: colors.$blue;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .marker-green {
+    display: inline;
+    background: colors.$green;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .marker-orange {
+    display: inline;
+    background: colors.$orange;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .underline-kc {
+    display: inline;
+    border-bottom: 2px solid colors.$kc;
+    padding: 0.3rem 0;
+  }
+
+  .underline-sc {
+    display: inline;
+    border-bottom: 2px solid colors.$sc;
+    padding: 0.3rem 0;
+  }
+
+  .underline-red {
+    display: inline;
+    border-bottom: 2px solid colors.$red;
+    padding: 0.3rem 0;
+  }
+
+  .underline-blue {
+    display: inline;
+    border-bottom: 2px solid colors.$blue;
+    padding: 0.3rem 0;
+  }
+
+  .underline-blue {
+    display: inline;
+    border-bottom: 2px solid colors.$blue;
+    padding: 0.3rem 0;
+  }
+
+  .underline-orange {
+    display: inline;
+    border-bottom: 2px solid colors.$orange;
+    padding: 0.3rem 0;
+  }
+}

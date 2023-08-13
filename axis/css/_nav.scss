@@ -1,0 +1,41 @@
+@use "color";
+
+.g-nav {
+  background: color.$main;
+  color: #fff;
+  width: 200px;
+  min-height: 100vh;
+
+  li {
+    i{
+      padding:.5rem 0 .5rem 1rem;
+    }
+    a {
+      color: #fff;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .dropdown {
+    ul {
+      display: none;
+      background: darken(color.$main, 5%);
+    }
+    &.show ul {
+      display: block;
+      li {
+        a {
+          padding: 0.5rem 2rem;
+          font-size: .9rem;
+        }
+        &:hover {
+          background: darken(color.$main, 10%);
+        }
+      }
+    }
+  }
+}

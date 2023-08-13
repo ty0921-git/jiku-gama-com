@@ -1,0 +1,124 @@
+@use "nav";
+@use "color";
+
+
+@each $key,
+$color in color.$colors {
+  .fc-#{$key} {
+    color: darken($color, 5%);
+  }
+
+  .bg-#{$key} {
+    background: $color;
+    font-weight: normal;
+    color: #FFF;
+  }
+
+  .btn-#{$key} {
+    background-color: $color;
+    border: 0;
+    color: #FFF;
+
+    &:hover {
+      background-color: darken($color, 5%);
+      color: #FFF;
+    }
+  }
+}
+
+.alert-danger {
+  background-color: map-get(color.$colors, 'cred');
+  color: #FFF;
+  border: 0;
+}
+
+html,
+body {
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: darken(map-get(color.$colors, 'main'), 10%);
+
+  &:hover {
+    color: darken(map-get(color.$colors, 'main'), 15%);
+  }
+}
+
+small {
+  font-size: 0.5em;
+}
+
+.form-control:focus {
+  border: 1px solid #CCC !important;
+  box-shadow: none !important;
+}
+
+.form-floating label {
+  font-size: .8rem;
+  color: #999;
+  padding: 1rem !important;
+
+  &.label-adj01 {
+    top: -5px;
+  }
+}
+
+.form-floating label b {
+  color: #E91E63;
+  padding-left: .2rem;
+}
+
+.tagit:hover+.label-adj01 {
+  display: none;
+}
+
+.badge {
+  font-weight: normal;
+}
+
+.table-lg {
+  td {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.cell-fit {
+  width: 50px;
+  white-space: nowrap;
+}
+
+.drag-area {
+  display: inline-block;
+  padding: 0 .5rem;
+  background: #FAFAFA;
+  border: 1px solid #CCC;
+  margin-right: 1rem;
+}
+
+.thumb01 {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #CCC;
+
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 70%;
+  }
+}
+
+
+table th{
+  text-align: center;
+  background:color.$main !important;
+  color:#FFF !important;
+}

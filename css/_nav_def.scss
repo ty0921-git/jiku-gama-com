@@ -1,0 +1,50 @@
+@use "colors";
+
+header {
+  nav {
+    background-color: colors.$kc;
+    &.navbar {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    .logo-head {
+      color: #fff;
+      padding: 0.7rem 0;
+      width: 170px;
+    }
+    .navbar-toggler {
+      font-size: 1rem;
+      border: 0;
+    }
+    .nav-item {
+      .nav-link {
+        color: darken(#fff, 5%) !important;
+        padding: 1.5rem 1rem !important;
+        &:hover {
+          color: #fff !important;
+          background-color: darken(colors.$kc, 5%);
+        }
+      }
+      .dropdown-menu {
+        background-color: darken(colors.$kc, 5%);
+        a {
+          color: #fff;
+          &:hover {
+            background-color: darken(colors.$kc, 10%);
+          }
+        }
+      }
+    }
+    &.fixed-top {
+      background-color: rgb(colors.$kc, 0.9);
+      h1 {
+        display: none;
+      }
+      .nav-item {
+        .nav-link {
+          padding: 1rem !important;
+        }
+      }
+    }
+  }
+}

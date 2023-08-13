@@ -1,0 +1,21 @@
+$fss:7,8,9,10,12,14,16,18,20,25,30,35,40,45,50;
+
+@each $fs in $fss {
+  $fs-min: $fs/10;
+
+  .fs#{$fs} {
+    font-size:#{$fs-min}rem;
+  }
+}
+
+@media (min-width:768px) {
+  @each $fs in $fss {
+    $fs-min: $fs/10;
+
+    .fs-md-#{$fs} {
+      font-size:#{$fs-min}rem;
+    }
+  }
+}
+
+*{font-weight: normal;}

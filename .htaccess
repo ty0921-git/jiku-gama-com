@@ -1,0 +1,19 @@
+ErrorDocument 404 https://adisign-base.com
+ErrorDocument 403 https://adisign-base.com
+
+RewriteEngine on
+#RewriteCond %{HTTPS} !on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule news_detail_(.+).html+ news_detail.php?code=$1
+RewriteRule blog_detail_(.+).html+ blog_detail.php?code=$1
+RewriteRule item_detail_(.+).html+ item_detail.php?code=$1
+RewriteRule faq_detail_(.+).html+ faq_detail.php?code=$1
+RewriteRule archive_detail_(.+).html+ archive_detail.php?code=$1
+RewriteRule spot_detail_(.+).html+ spot_detail.php?code=$1
+RewriteRule staff_detail_(.+).html+ staff_detail.php?code=$1
+RewriteRule match_result_detail_(.+).html+ match_result_detail.php?code=$1
+RewriteRule (.+).html+ $1.php

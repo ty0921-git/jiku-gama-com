@@ -1,0 +1,139 @@
+@use "colors";
+
+.open,
+.close {
+  display: none;
+  @media screen and (max-width: 576px) {
+    display: block;
+  }
+}
+
+.open {
+  span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    &:nth-child(2) {
+      margin: 5px 0;
+    }
+  }
+}
+
+header {
+  nav {
+    background-color: colors.$kc;
+    a {
+      color: #ddd;
+      &:hover {
+        color: #fff;
+      }
+    }
+    input[type="checkbox"] {
+      position: absolute;
+      left: -50vw;
+    }
+
+    .logo-head {
+      color: #fff;
+      padding: 0.7rem 0;
+      width: 170px;
+      h1 {
+        @media screen and (max-width: 576px) {
+          display: none;
+        }
+      }
+    }
+    #menu {
+      transition: 0.3s;
+      & > ul {
+        display: flex;
+        height: 100%;
+        & > li {
+          display: flex;
+          & > a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-bottom: 1px solid transparent;
+            transition: 0.5s;
+            margin-bottom: 2px;
+            &:hover {
+              border-bottom: 1px solid white;
+            }
+          }
+          &.dropdown {
+            position: relative;
+            ul {
+              margin: 0;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              transform: translateY(100%);
+              z-index: 999;
+              display: none;
+              background: darken(colors.$kc, 5%);
+              width: 200px;
+              padding-bottom: 1rem;
+              li {
+                a {
+                  display: block;
+                  padding: 0.5rem 1rem;
+                  font-size: 0.9em;
+                }
+              }
+              &.show {
+                display: block;
+              }
+              @media screen and (max-width: 576px) {
+                position: relative;
+                transform: translateY(0%);
+                width: 100%;
+              }
+            }
+            @media screen and (max-width: 576px) {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      @media screen and (max-width: 576px) {
+        position: fixed;
+        overflow: auto;
+        z-index: 9999;
+        top: 0;
+        left: -100vw;
+        background-color: colors.$kc;
+        width: 100vw;
+        height: 100%;
+        min-height: 100vh;
+        ul {
+          margin: 1rem;
+          flex-wrap: wrap;
+          height: auto;
+          li {
+            width: 100%;
+            a {
+              font-size: 1.5rem;
+              text-align: center;
+              width: 100%;
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    input[type="checkbox"]:checked + #menu {
+      left: 0;
+    }
+
+    &.fixed-top {
+      background-color: rgb(colors.$kc, 0.9);
+      h1 {
+        display: none;
+      }
+    }
+  }
+}

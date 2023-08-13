@@ -1,0 +1,90 @@
+@use "colors";
+
+$fss: 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 25, 30, 35, 40, 45, 50;
+
+@each $fs in $fss {
+  $fsnum: "";
+  @if $fs < 10 {
+    $fsnum: "0" + $fs;
+  } @else {
+    $fsnum: $fs;
+  }
+  $fs-min: $fs / 10;
+  .fs#{$fsnum} {
+    font-size: #{$fs-min}rem;
+  }
+}
+
+@media (min-width: 768px) {
+  @each $fs in $fss {
+    $fsnum: "";
+    @if $fs < 10 {
+      $fsnum: "0" + $fs;
+    } @else {
+      $fsnum: $fs;
+    }
+    $fs-min: $fs / 10;
+    .fs-md-#{$fsnum} {
+      font-size: #{$fs-min}rem;
+    }
+  }
+}
+
+* {
+  box-shadow: none !important;
+}
+
+html {
+  height: 100%;
+  font-size: 14px !important;
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #222;
+    background: darken(colors.$kc, 10%);
+    main {
+      background: colors.$bc;
+      flex: 1;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: darken(colors.$kc, 5%);
+  &:hover {
+    color: darken(colors.$kc, 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wsnw {
+  white-space: nowrap;
+}
+
+small {
+  font-size: 0.5em !important;
+}
+
+.lh100 {
+  line-height: 100% !important;
+}
+
+.anchor {
+  padding-top: 150px;
+  margin-top: -150px;
+}
