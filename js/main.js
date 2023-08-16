@@ -11,9 +11,9 @@ window.addEventListener("scroll", function () {
     panel.classList.remove("show");
   }
   if (sc > 0) {
-    nav.classList.add("fixed-top");
+    nav.classList.add("nav-alfa");
   } else {
-    nav.classList.remove("fixed-top");
+    nav.classList.remove("nav-alfa");
   }
 });
 

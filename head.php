@@ -23,6 +23,10 @@ if (file_exists($favicon)) :
 <?= get_cdn_header() ?>
 
 <link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/style.min.css?d=<?= date("is") ?>">
+<link rel="stylesheet" href="css/style.min.css">
 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
 <?= PHP_EOL ?>

@@ -8,11 +8,11 @@ require("head.php");
   <?php
   require("nav.php");
   require("slider_swiper.php");
-  require("block_news.php");
   require("block_contents.php");
-  require("block_archive.php");
-  require("block_items.php");
-  require("block_staff.php");
-  require("block_spot.php");
   require("foot.php");
   ?>
+
+  <script>
+    let navFixed = document.querySelector('nav');
+    navFixed.classList.add('fixed-top');
+  </script>

@@ -22,7 +22,7 @@
 
 header {
   nav {
-    background-color: colors.$kc;
+    background-color: rgba($color: colors.$kc, $alpha: 0.5);
     a {
       color: #ddd;
       &:hover {
@@ -35,12 +35,16 @@ header {
     }
 
     .logo-head {
+      display: flex;
+      align-items: center;
       color: #fff;
-      padding: 0.7rem 0;
-      width: 170px;
-      h1 {
-        @media screen and (max-width: 576px) {
-          display: none;
+      padding: 0.5rem 0.5rem;
+      img {
+        width: 150px;
+      }
+      @media screen and (max-width: 576px) {
+        img {
+          width: 120px;
         }
       }
     }
@@ -130,10 +134,13 @@ header {
     }
 
     &.fixed-top {
-      background-color: rgb(colors.$kc, 0.9);
+      background-color: rgba($color: colors.$kc, $alpha: 0.5);
       h1 {
         display: none;
       }
+    }
+    &.nav-alfa {
+      background-color: rgba($color: colors.$kc, $alpha: 0.7);
     }
   }
 }

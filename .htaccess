@@ -1,9 +1,9 @@
-ErrorDocument 404 https://adisign-base.com
-ErrorDocument 403 https://adisign-base.com
+ErrorDocument 404 https://jiku-gama.com
+ErrorDocument 403 https://jiku-gama.com
 
 RewriteEngine on
-#RewriteCond %{HTTPS} !on
-#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 

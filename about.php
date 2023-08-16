@@ -1,20 +1,28 @@
 <?php
 require("head.php");
-require("map.php");
 ?>
-<title>会社概要 | <?= h($site_catch) ?> <?= h($site_name) ?></title>
+<title>アクセス | <?= h($site_catch) ?> <?= h($site_name) ?></title>
 </head>
 
 <body>
     <?php
     require("nav.php");
     ?>
-    <section class="p-2 p-md-4"></section>
 
+    <img src="image/band-about.jpg" class="img-fluid mb-5">
 
-
-    <section class="container mb-4 mb-md-5">
-        <h2 class="heading"><span>About us</span> <small>会社概要</small></h2>
+    <section class="container mb-4 mb-md-5 min">
+        <h2 class="heading mb-4 mb-md-5"><span>時空窯</span> <small>Gallery</small></h2>
+        <div class="row g-1 mb-4">
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".1s"><img src="image/jiku01-1.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".2s"><img src="image/jiku01-2.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".3s"><img src="image/jiku02.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".4s"><img src="image/jiku03.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".1s"><img src="image/jiku04.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".2s"><img src="image/jiku05.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".3s"><img src="image/jiku06.jpg" class="img-fluid" loading="lazy"></div>
+            <div class="col-md-3 col-6 wow fadeInUp" data-wow-delay=".4s"><img src="image/jiku07.jpg" class="img-fluid" loading="lazy"></div>
+        </div>
     </section>
 
 
@@ -119,13 +127,13 @@ require("map.php");
 
 
 
-    <section class="container mb-5">
-        <h2 class="heading"><span>Access</span> <small>アクセス</small></h2>
+    <section class="container mb-5 min">
+        <h2 class="heading"><span>アクセス</span> <small>Access</small></h2>
     </section>
 
 
     <section id="map" class="container mb-5" style="height:500px;">
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5669.387752509722!2d129.97158329848318!3d33.453889297544265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356a7870e7f84c39%3A0xf39bd4f884a5616c!2z44CSODQ3LTAwMTYg5L2Q6LOA55yM5ZSQ5rSl5biC5p2x5Z-O5YaF77yU4oiS77yV77yV!5e0!3m2!1sja!2sjp!4v1692214073748!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 

@@ -1,11 +1,12 @@
+<div class="p-0 p-md-5"></div>
 <section class="container">
   <div class="row justify-content-center mb-5">
     <div class="col-md-8">
       <div class="contact-box px-5 py-md-5 px-md-4">
 
         <div class="text-center mb-4">
-          <h2 class="fc-kc">Contact</h2>
-          <small>お問い合わせ</small>
+          <h2 class="fs14 fc-kc min wsnw">お問い合わせ</h2>
+          <small>Contact</small>
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 g-md-4 mb-4">
@@ -35,9 +36,6 @@
           </div>
 
         </div>
-
-        <div class="text-md-center">商品・サービスへのご質問・ご不明な点などがありましたら、お気軽にお問い合わせください。</div>
-
       </div>
     </div>
   </div>
@@ -47,9 +45,9 @@
 
 </main>
 
-<footer class="px-3">
+<footer class="px-3 min">
   <div class="container">
-    <div class="row row-cols-1 row-cols-2 row-cols-md-4 g-5 mb-4">
+    <div class="row row-cols-1 row-cols-2 row-cols-md-4 g-5">
 
       <div class="col-12 col-md-3">
         <?php
@@ -60,60 +58,35 @@
           <h2><?= h($site_name) ?></h2>
         <?php endif; ?>
         <hr>
-        <div class="mb-2"><?= h($com_name) ?></div>
-        <div class="fs08">
+        <div class="mb-2 min"><?= h($com_name) ?> | 陶芸家・峰とし子公式サイト</div>
+        <!-- <div class="fs08">
           <div>〒<?= h($com_zip) ?></div>
           <div><?= h($com_add) ?></div>
           <div><a href=" tel:<?= h($com_tel) ?>">TEL <?= h($com_tel) ?></a></div>
           <?php if ($com_fax) : ?>
             <div>FAX <?= h($com_fax) ?></div>
           <?php endif; ?>
+        </div> -->
+      </div>
+
+      <div class="col-12 col-md-9">
+        <div class="d-flex flex-md-row flex-column align-items-start justify-content-md-between">
+          <a class="border-f border-gray text-center flex-grow-1" href="./">ホーム</a>
+          <a class="border-f border-gray text-center flex-grow-1" href="gallery.html">ギャラリー</a>
+          <a class="border-f border-gray text-center flex-grow-1" href="profile.html">陶芸家</a>
+          <a class="border-f border-gray text-center flex-grow-1" href="privacy.html">プライバシーポリシー</a>
+          <a class="border-f border-gray text-center flex-grow-1" href="about.html">アクセス</a>
+          <a class="border-f border-gray text-center flex-grow-1" href="contact_form.html">お問い合わせ</a>
         </div>
-      </div>
-
-      <div class="col d-none d-md-block">
-        <h2>Heading Line</h2>
-        <ul>
-          <li><a href="">Contents</a></li>
-          <li><a href="">Contents</a></li>
-          <li><a href="">Contents</a></li>
-          <li><a href="">Contents</a></li>
-        </ul>
-      </div>
-
-      <div class="col d-none d-md-block">
-        <h2>オンラインストア</h2>
-        <ul>
-          <li><a href="item_list.html">商品一覧</a></li>
-          <li><a href="cart01.html">カートを見る</a></li>
-          <li><a href="delivery_list.html">送料について</a></li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-md-3">
-        <h2>About Us</h2>
-        <ul>
-          <li><a href="faq_list.html">よくあるご質問</a></li>
-          <li><a href="privacy.html">プライバシーポリシー</a></li>
-          <li><a href="law.html">特商法に基づく表記</a></li>
-          <li><a href="contact_form.html">お問い合わせ</a></li>
-          <li><a href="about.html">会社概要</a></li>
-        </ul>
+        <div class="copyright py-2 pt-5 text-center text-md-end">Copyright <?= date("Y") ?> <?= h($com_copyright_name) ?> Allright Reserved.</div>
       </div>
 
     </div>
 
 
-    <?php
-    require("sns_link.php");
-    ?>
-
-
 
   </div>
 </footer>
-
-<div class="copyright py-2">Copyright <?= date("Y") ?> <?= h($com_copyright_name) ?> Allright Reserved.</div>
 
 
 
