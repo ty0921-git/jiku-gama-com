@@ -30,3 +30,7 @@ if (file_exists($favicon)) :
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
 <?= PHP_EOL ?>
+
+<?php
+$num = [56, 70, 45, 21, 74, 79, 58, 66, 55, 47, 48, 23, 6, 4, 75, 65, 42, 62, 54, 24, 60, 61, 71, 67, 31, 36, 29, 32, 72, 76, 50, 77, 49, 20, 80];
+?>

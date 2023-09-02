@@ -3,7 +3,6 @@
   <div class="row g-2 row-cols-2 row-cols-md-3 mb-5">
     <?php
     $i = 0;
-    $num = range(1, 80);
     shuffle($num);
     $rows = array_slice($num, 0, 6);
 
@@ -34,7 +33,7 @@
 
   <div class="row g-md-5">
     <div class="col-md-4">
-      <img src="image/potter.jpg" class="img-fluid mb-4 mb-md-0">
+      <img src="image/potter3.jpg" class="img-fluid mb-4 mb-md-0">
     </div>
     <div class="col-md-8">
 

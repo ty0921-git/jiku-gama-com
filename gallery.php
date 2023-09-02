@@ -22,7 +22,6 @@ require("head.php");
     <div class="row row-cols-2 row-cols-md-3 g-3 grid">
       <?php
       $i = 0;
-      $num = range(1, 80);
       shuffle($num);
       $rows = array_slice($num, 0, 80);
 
