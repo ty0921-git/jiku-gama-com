@@ -21,6 +21,7 @@
   </div>
 </section>
 
+
 <section class="fix-bg mb-5 d-flex align-items-center" style="background-image:url(image/fix-bg01.jpg);">
   <div class="fs30 text-white min container">土と共に</div>
 </section>
