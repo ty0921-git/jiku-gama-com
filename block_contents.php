@@ -9,7 +9,7 @@
     foreach ($rows as $row) : $img = "gallery/g" . sprintf('%05d', $row) . ".jpg"; ?>
       <div class="col wow fadeInUp" data-wow-delay="<?= ($i * 0.1) ?>s">
         <div class="box">
-          <a href="<?= $row ?>" class="thumb thumb01-hold" style="background-image:url(<?= $img ?>);"></a>
+          <a class="thumb thumb01-hold" style="background-image:url(<?= $img ?>);"></a>
         </div>
       </div>
     <?php $i++;
