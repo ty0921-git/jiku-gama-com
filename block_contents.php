@@ -34,7 +34,11 @@
 
   <div class="row g-md-5">
     <div class="col-md-4">
-      <img src="image/potter3.jpg" class="img-fluid mb-4 mb-md-0">
+      <div>
+        <div class="text-center">
+          <img src="image/potter3-ss.jpg" class="img-fluid mb-4 mb-md-0">
+        </div>
+      </div>
     </div>
     <div class="col-md-8">
 
