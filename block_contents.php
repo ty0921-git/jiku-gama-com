@@ -43,7 +43,6 @@
     <div class="col-md-8">
 
       <div class="mb-5">
-        <span>陶芸家</span>
         <h2 class="fs20 mb-4">峰 とし子 <small>- Mine Toshiko -</small></h2>
         <p>陶器の魅力に導かれ独学で一心不乱、陶芸に没頭。その後、人間国宝「井上萬二」氏に師事し、陶芸の基礎を習得。既成に捉われない自由な発想で作陶活動を展開。</p>
         <a href="profile.html" class="btn btn-btn mt-4">プロフィールはこちら</a>
