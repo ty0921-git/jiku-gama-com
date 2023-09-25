@@ -36,7 +36,7 @@
     <div class="col-md-4">
       <div>
         <div class="text-center">
-          <img src="image/potter3-ss.jpg" class="img-fluid mb-4 mb-md-0">
+          <img src="image/potter4-ss.jpg" class="img-fluid mb-4 mb-md-0">
         </div>
       </div>
     </div>

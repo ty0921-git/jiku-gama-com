@@ -80,8 +80,9 @@
     var swiper = new Swiper(".swiper", {
         loop: true,
         loopAdditionalSlides: 1,
-        speed: 3000,
+        speed: 1500,
         autoplay: {
+            delay: 1500,
             disableOnInteraction: false,
         },
         effect: 'fade',
